@@ -10,7 +10,6 @@ This Python script calculates the perimeter and area of a triangle using the len
 - [Example](#example)
 - [Output](#output)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -86,6 +85,3 @@ Contributions are welcome! If you'd like to improve this script, please fork the
 4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
