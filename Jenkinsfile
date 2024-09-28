@@ -3,9 +3,10 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                // Checkout the code from your repository
-                git url: 'https://github.com/SlaviPavlov98/diploma_thesis.git', branch: 'main'
+            script {
+                    // Use GitHub App credentials
+                    withCredentials([[$class: 'GitHubApp', credentialsId: '58ba52ad-c031-4e1e-bae0-6cb4bd8b33ca']]) {
+                    git url: 'https://github.com/SlaviPavlov98/diploma_thesis.git', branch: 'main'
             }
         }
 
