@@ -3,3 +3,6 @@ def get_angles(a, b, c):
     B = math.degrees(math.acos((a**2 + c**2 - b**2) / (2 * a * c)))
     C = 180 - A - B
     return A, B, C
+
+
+print(f"Angles: {get_angles(a, b, c)}")
