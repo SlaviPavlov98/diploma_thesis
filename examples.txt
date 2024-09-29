@@ -6,3 +6,10 @@ def get_angles(a, b, c):
 
 
 print(f"Angles: {get_angles(a, b, c)}")
+
+
+def is_valid_triangle(a, b, c):
+    return a + b > c and a + c > b and b + c > a
+
+
+print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
