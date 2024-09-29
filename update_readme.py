@@ -6,14 +6,20 @@ client = openai.OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
 )
 
-chat_completion = client.chat.completions.create(
-    messages=[
-        {
-            "role": "user",
-            "content": "Say this is a test",
-        }
-    ],
-    model="gpt-4o-mini",
-)
 
-print(chat_completion.choices[0].message.content)
+def get_openai_response():
+    chat_completion = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": "Say this is a test",
+            }
+        ],
+        model="gpt-4o-mini",
+    )
+
+    return chat_completion.choices[0].message.content
+
+
+response = get_openai_response()
+print(f'Response: {response}')
