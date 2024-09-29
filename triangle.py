@@ -16,13 +16,6 @@ def get_area(a, b, c):
         return "These sides do not form a valid triangle"
 
 
-def get_angles(a, b, c):
-    A = math.degrees(math.acos((b**2 + c**2 - a**2) / (2 * b * c)))
-    B = math.degrees(math.acos((a**2 + c**2 - b**2) / (2 * a * c)))
-    C = 180 - A - B
-    return A, B, C
-
-
 def is_valid_triangle(a, b, c):
     return a + b > c and a + c > b and b + c > a
 
