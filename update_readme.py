@@ -68,6 +68,8 @@ def update_readme():
 
     updated_readme_content = get_openai_response(prompt)
 
+    print(updated_readme_content)
+
     # Write the new README content back to README.md
     write_file(readme_file_path, updated_readme_content)
 
