@@ -1,11 +1,15 @@
 # Triangle Calculator
 
-This Python script calculates the perimeter and area of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area and checks whether the specified sides form a valid triangle before performing the calculation.
+This Python script calculates the perimeter, area, and angles of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area, checks whether the specified sides form a valid triangle, and calculates the angles using the Law of Cosines.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Functions](#functions)
+  - [get_perimeter(a, b, c)](#get_perimetera-b-c)
+  - [get_area(a, b, c)](#get_areaa-b-c)
+  - [get_angles(a, b, c)](#get_anglesa-b-c)
+  - [is_valid_triangle(a, b, c)](#is_valid_trianglea-b-c)
 - [Example](#example)
 - [Output](#output)
 - [Contributing](#contributing)
@@ -54,15 +58,35 @@ python triangle.py
   - The area of the triangle if the sides form a valid triangle.
   - A message `"These sides do not form a valid triangle"` if the provided sides do not meet the triangle inequality conditions.
 
+### `get_angles(a, b, c)`
+
+- **Description**: Calculates the angles of a triangle in degrees using the Law of Cosines.
+- **Parameters**:
+  - `a` (float or int): Length of the first side.
+  - `b` (float or int): Length of the second side.
+  - `c` (float or int): Length of the third side.
+- **Returns**: A tuple containing the angles A, B, and C in degrees.
+
+### `is_valid_triangle(a, b, c)`
+
+- **Description**: Checks if three sides can form a valid triangle.
+- **Parameters**:
+  - `a` (float or int): Length of the first side.
+  - `b` (float or int): Length of the second side.
+  - `c` (float or int): Length of the third side.
+- **Returns**: `True` if the sides can form a valid triangle; otherwise, `False`.
+
 ## Example
 
-Modify the following example in the script to calculate the perimeter and area of a triangle with sides `a`, `b`, and `c`:
+Modify the following example in the script to calculate the perimeter, area, and angles of a triangle with sides `a`, `b`, and `c`:
 
 ```python
 a, b, c = 3, 4, 5  # Modify these values for your triangle
 
+print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
+print(f"Angles: {get_angles(a, b, c)}")
 ```
 
 ## Output
@@ -70,8 +94,10 @@ print(f"Area: {get_area(a, b, c)}")
 For a triangle with sides `a = 3`, `b = 4`, `c = 5`:
 
 ```
+Is valid triangle: True
 Perimeter: 12
 Area: 6.0
+Angles: (36.8698976421411, 53.13010235785889, 90.0)
 ```
 
 ## Contributing
