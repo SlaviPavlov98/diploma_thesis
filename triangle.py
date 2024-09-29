@@ -26,4 +26,3 @@ a, b, c = 3, 4, 5
 print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
-print(f"Angles: {get_angles(a, b, c)}")
