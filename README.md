@@ -30,7 +30,7 @@ This Python script calculates the perimeter, area, validates the formation of a 
 
 ## Usage
 
-To use this script, run it with Python after modifying the side lengths `a`, `b`, and `c` for your triangle in the code.
+To use this script, run it with Python after modifying the side lengths `a`, `b`, and `c` for your triangle in the code:
 
 ```bash
 python triangle.py
