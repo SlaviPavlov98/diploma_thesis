@@ -1,6 +1,6 @@
 # Triangle Calculator
 
-This Python script calculates the perimeter and area of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area and provides checks for valid triangle formation based on the specified sides.
+This Python script calculates the perimeter and area of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area and verifies the validity of triangle formation based on the specified sides.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -59,16 +59,16 @@ python triangle.py
 
 ### `is_valid_triangle(a, b, c)`
 
-- **Description**: Checks if three sides can form a valid triangle.
+- **Description**: Checks if three sides can form a valid triangle. *(Note: This function is not currently implemented in the provided code but is mentioned in the existing README.)*
 - **Parameters**:
   - `a` (float or int): Length of the first side.
   - `b` (float or int): Length of the second side.
   - `c` (float or int): Length of the third side.
-- **Returns**: `True` if the sides can form a valid triangle; otherwise, `False`.
+- **Returns**: `True` if the sides can form a valid triangle; otherwise, `False`. 
 
 ## Example
 
-Modify the following example in the script to calculate the perimeter, area, and validate if a triangle can be formed with the sides `a`, `b`, and `c`:
+Modify the following example in the script to calculate the perimeter and area for a triangle using the sides `a`, `b`, and `c`:
 
 ```python
 a, b, c = 3, 4, 5  # Modify these values for your triangle
