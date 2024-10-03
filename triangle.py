@@ -16,8 +16,6 @@ def get_area(a, b, c):
         return "These sides do not form a valid triangle"
 
 
-
-
 # Example usage
 a, b, c = 3, 4, 5
 
