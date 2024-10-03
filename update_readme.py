@@ -43,6 +43,7 @@ def update_readme():
     prompt = f"""
     Based on the following Python code, please update the README documentation accordingly.
     Make sure to use proper Markdown syntax with sections, code blocks, and clear formatting.
+    If a function is removed, please also remove it when you are updating the README.
 
     **Example Format**:
     # Title
