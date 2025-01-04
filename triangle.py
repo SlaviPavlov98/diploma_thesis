@@ -22,7 +22,6 @@ def get_angles(a, b, c):
     C = 180 - A - B
     return A, B, C
 
-
 # Example usage
 a, b, c = 3, 4, 5
 
