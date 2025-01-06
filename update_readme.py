@@ -1,36 +1,25 @@
 import openai
 import os
 
-
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
-
 
 def write_file(file_path, content):
     with open(file_path, 'w') as file:
         file.write(content)
 
-
-client = openai.OpenAI(
-    # This is the default and can be omitted
-    api_key=os.getenv("OPENAI_API_KEY"),
-)
-
+# Set the API key from environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def get_openai_response(prompt):
-    chat_completion = client.chat.completions.create(
+    chat_completion = openai.ChatCompletion.create(
+        model="gpt-4",
         messages=[
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
-        model="gpt-4o-mini",
+            {"role": "user", "content": prompt}
+        ]
     )
-
-    return chat_completion.choices[0].message.content
-
+    return chat_completion.choices[0].message["content"]
 
 def update_readme():
     code_file_path = 'triangle.py'
@@ -73,7 +62,6 @@ def update_readme():
 
     # Write the new README content back to README.md
     write_file(readme_file_path, updated_readme_content)
-
 
 if __name__ == '__main__':
     update_readme()
