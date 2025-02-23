@@ -1,6 +1,6 @@
 # Triangle Calculator
 
-This Python script calculates the perimeter, area, and angles of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area and verifies the triangle validity based on the specified sides. It also calculates the angles of the triangle.
+This Python script calculates the perimeter and area of a triangle using the lengths of its three sides. It employs Heron's formula to compute the area and verifies the triangle validity based on the specified sides.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -8,7 +8,6 @@ This Python script calculates the perimeter, area, and angles of a triangle usin
 - [Functions](#functions)
   - [get_perimeter(a, b, c)](#get_perimetera-b-c)
   - [get_area(a, b, c)](#get_areaa-b-c)
-  - [get_angles(a, b, c)](#get_anglesa-b-c)
 - [Example](#example)
 - [Output](#output)
 - [Contributing](#contributing)
@@ -57,25 +56,15 @@ python triangle.py
   - The area of the triangle if the sides form a valid triangle.
   - A message `"These sides do not form a valid triangle"` if the provided sides do not meet the triangle inequality conditions.
 
-### `get_angles(a, b, c)`
-
-- **Description**: Calculates the angles of a triangle given its three sides using the law of cosines.
-- **Parameters**:
-  - `a` (float or int): Length of the first side.
-  - `b` (float or int): Length of the second side.
-  - `c` (float or int): Length of the third side.
-- **Returns**: The angles of the triangle in degrees.
-
 ## Example
 
-Modify the following example in the script to calculate the perimeter, area, and angles for a triangle using the sides `a`, `b`, and `c`:
+Modify the following example in the script to calculate the perimeter and area for a triangle using the sides `a`, `b`, and `c`:
 
 ```python
 a, b, c = 3, 4, 5  # Modify these values for your triangle
 
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
-print(f"Angles: {get_angles(a, b, c)}")
 ```
 
 ## Output
@@ -85,7 +74,6 @@ For a triangle with sides `a = 3`, `b = 4`, `c = 5`:
 ```
 Perimeter: 12
 Area: 6.0
-Angles: (36.86989764584402, 53.13010235415599, 90.0)
 ```
 
 ## Contributing
