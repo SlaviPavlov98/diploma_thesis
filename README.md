@@ -1,5 +1,5 @@
 # Triangle Calculator
-Updated Python script that calculates the perimeter, area, and angles of a triangle given the lengths of its three sides as input. Utilizes Heron's formula to compute the area and the Law of Cosines to determine the angles. The script also validates the triangle based on side lengths.
+Python script that calculates the perimeter, area, and angles of a triangle given the lengths of its three sides as input. It utilizes Heron's formula for the computation of the area and the Law of Cosines to determine the angles. The script also checks if the provided side lengths can form a valid triangle.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -25,11 +25,11 @@ Updated Python script that calculates the perimeter, area, and angles of a trian
     cd your-repo-name
     ```
 
-3. Ensure you have Python installed. This script uses Python 3.x.
+3. Ensure you have Python installed. This script is designed for Python 3.x.
 
 ## Usage
 
-To deploy this script, run it with Python after editing the `a`, `b`, and `c` side lengths for your triangle in the code:
+To run this script, execute it with Python after specifying the `a`, `b`, and `c` side lengths for your triangle in the code:
 
 ```bash
 python triangle.py
@@ -39,36 +39,36 @@ python triangle.py
 
 ### `get_perimeter(a, b, c)`
 
-- **Description**: Get the perimeter of a triangle.
-- **Parameters**: `a`, `b`, `c` (floats or integers): Lengths of the triangle sides.
-- **Returns**: The calculated perimeter of the triangle.
+- **Description**: Calculates the perimeter of a triangle.
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
+- **Returns**: The perimeter of the triangle.
 
 ### `get_area(a, b, c)`
 
-- **Description**: Calculate the area of a triangle using Heron's formula.
-- **Parameters**: `a`, `b`, `c` (floats or integers): Lengths of the triangle sides.
+- **Description**: Calculates the area of a triangle using Heron's formula.
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
 - **Returns**: 
-  - The calculated area of the triangle if the sides form a valid triangle.
-  - A message `"These sides do not form a valid triangle"` if sides don't meet triangle inequality theorem conditions.
+  - The area of the triangle if the provided sides form a valid triangle.
+  - `"These sides do not form a valid triangle"` if the sides do not meet the conditions defined by the Triangle Inequality Theorem.
 
 ### `get_angles(a, b, c)`
 
-- **Description**: Calculate the angles of a triangle using the Law of Cosines. 
-- **Parameters**: `a`, `b`, `c` (floats or integers): Lengths of the triangle sides.
-- **Returns**: The calculated angles (in degrees) of the triangle.
+- **Description**: Compute the angles of a triangle using the Law of Cosines. 
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
+- **Returns**: The angles (in degrees) of the triangle.
 
 ### `is_valid_triangle(a, b, c)`
 
-- **Description**: Determines if given side lengths can form a valid triangle.
-- **Parameters**: `a`, `b`, `c` (floats or integers): Lengths of the triangle sides.
-- **Returns**: True if the sides can form a valid triangle, else False.
+- **Description**: Checks if the given lengths can form a valid triangle.
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
+- **Returns**: `True` if the given side lengths can form a valid triangle, `False` otherwise.
 
 ## Usage Example
 
-Modify the code sample below to execute the calculations on the triangle with given sides `a`, `b`, and `c`:
+Make modifications to the code sample below in order to perform calculations on your triangle using the provided sides `a`, `b`, and `c`:
 
 ```python
-a, b, c = 3, 4, 5 # Change these values to test with your own values
+a, b, c = 3, 4, 5
 
 print(f'Is a valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
@@ -78,7 +78,7 @@ print(f"Angles: {get_angles(a, b, c)}")
 
 ## Output
 
-The result outputs for a triangle with `a = 3`, `b = 4`, `c = 5`:
+For a triangle with side lengths `a = 3`, `b = 4`, and `c = 5`, the outputs are:
 
 ```
 Is a valid triangle: True
@@ -89,10 +89,10 @@ Angles: (36.86989764584402, 53.13010235415599, 90.0)
 
 ## Contributions
 
-Your contributions are always welcome! If you want to collaborate or improve this script, please fork this repository and create a pull request. Here are steps to get you started:
+Your contributions are most welcome! In order to contribute or improve this script, please fork this repository and create a pull request. Follow the steps below to get started:
 
 1. Fork the Project
-2. Create your Feature Branch as (`git checkout -b feature/InterestingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/InterestingFeature`)
 3. Commit your Changes (`git commit -m 'Add an interesting feature'`)
 4. Push to the Branch (`git push origin feature/InterestingFeature`)
 5. Open a Pull Request
