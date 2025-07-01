@@ -1,6 +1,6 @@
 # Triangle Calculator
 
-A Python script for calculating the perimeter and area of a triangle. The script uses the user's input for the side lengths of the triangle and applies Heron's formula for area calculation. The script can also determine the validity of a triangle based on the given side lengths.
+A Python script for calculating the perimeter and area of a triangle. The script uses the user's input for the side lengths of the triangle and applies Heron's formula for area calculation. The script also includes a function to determine the validity of a triangle based on the given side lengths.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -8,6 +8,7 @@ A Python script for calculating the perimeter and area of a triangle. The script
 - [Key Functions](#key-functions)
     - [get_perimeter(a, b, c)](#get_perimetera-b-c)
     - [get_area(a, b, c)](#get_areaa-b-c)
+    - [is_valid_triangle(a, b, c)](#is_valid_trianglea-b-c)
 - [Usage Example](#usage-example)
 - [Output](#output)
 - [Contributions](#contributions)
@@ -47,6 +48,14 @@ python triangle.py
   - The area of the triangle if the provided sides form a valid triangle.
   - `"These sides do not form a valid triangle"` if the sides do not meet the conditions defined by the Triangle Inequality Theorem.
 
+### `is_valid_triangle(a, b, c)`
+
+- **Description**: Checks if three given lengths can form a valid triangle.
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths to form a triangle.
+- **Returns**: 
+  - True if the sides form a valid triangle.
+  - False if the sides do not form a valid triangle.
+
 ## Usage Example
 
 If you want to use the script for calculations on a triangle with side lengths `a`, `b`, and `c`, change the values to:
@@ -54,6 +63,7 @@ If you want to use the script for calculations on a triangle with side lengths `
 ```python
 a, b, c = 3, 4, 5
 
+print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
 ```
@@ -63,6 +73,7 @@ print(f"Area: {get_area(a, b, c)}")
 The output given for a triangle with side lengths `a = 3`, `b = 4`, and `c = 5`:
 
 ```
+Is valid triangle: True
 Perimeter: 12
 Area: 6.0
 ```
