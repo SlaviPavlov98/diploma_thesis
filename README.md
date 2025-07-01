@@ -6,9 +6,8 @@ A Python script for calculating the perimeter and area of a triangle. The script
 - [Installation](#installation)
 - [Usage](#usage)
 - [Key Functions](#key-functions)
-  - [get_perimeter(a, b, c)](#get_perimetera-b-c)
-  - [get_area(a, b, c)](#get_areaa-b-c)
-  - [is_valid_triangle(a, b, c)](#is_valid_trianglea-b-c)
+    - [get_perimeter(a, b, c)](#get_perimetera-b-c)
+    - [get_area(a, b, c)](#get_areaa-b-c)
 - [Usage Example](#usage-example)
 - [Output](#output)
 - [Contributions](#contributions)
@@ -38,7 +37,7 @@ python triangle.py
 
 - **Description**: Calculates the perimeter of a triangle.
 - **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
-- **Returns**: The perimeter of the triangle.
+- **Returns**: The perimter of the triangle.
 
 ### `get_area(a, b, c)`
 
@@ -48,20 +47,13 @@ python triangle.py
   - The area of the triangle if the provided sides form a valid triangle.
   - `"These sides do not form a valid triangle"` if the sides do not meet the conditions defined by the Triangle Inequality Theorem.
 
-### `is_valid_triangle(a, b, c)`
-
-- **Description**: Checks if the provided side lengths are able to form a valid triangle.
-- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
-- **Returns**: `True` if the given side lengths can form a valid triangle. `False` otherwise.
-
 ## Usage Example
 
-If you want to use the script for calculations on a triangle with side lengths `a`, `b`, and `c`, channel changes to:
+If you want to use the script for calculations on a triangle with side lengths `a`, `b`, and `c`, change the values to:
 
 ```python
 a, b, c = 3, 4, 5
 
-print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
 ```
@@ -71,7 +63,6 @@ print(f"Area: {get_area(a, b, c)}")
 The output given for a triangle with side lengths `a = 3`, `b = 4`, and `c = 5`:
 
 ```
-Is a valid triangle: True
 Perimeter: 12
 Area: 6.0
 ```
