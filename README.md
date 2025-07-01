@@ -1,6 +1,6 @@
 # Triangle Calculator
 
-A Python script for calculating the perimeter and area of a triangle. The script uses the user's input for the side lengths of the triangle and applies Heron's formula for area calculation. The script also includes a function to determine the validity of a triangle based on the given side lengths.
+A Python script for calculating the perimeter, area, and angles of a triangle. This script accepts the inputs for the side lengths of the triangle and applies mathematical formulas to calculate the related properties. It also checks the validity of a triangle based on the given side lengths. It now includes a function to calculate the inner angles of the triangle as well.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -9,6 +9,7 @@ A Python script for calculating the perimeter and area of a triangle. The script
     - [get_perimeter(a, b, c)](#get_perimetera-b-c)
     - [get_area(a, b, c)](#get_areaa-b-c)
     - [is_valid_triangle(a, b, c)](#is_valid_trianglea-b-c)
+    - [get_angles(a, b, c)](#get_anglesa-b-c)
 - [Usage Example](#usage-example)
 - [Output](#output)
 - [Contributions](#contributions)
@@ -38,7 +39,7 @@ python triangle.py
 
 - **Description**: Calculates the perimeter of a triangle.
 - **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
-- **Returns**: The perimter of the triangle.
+- **Returns**: The perimeter of the triangle.
 
 ### `get_area(a, b, c)`
 
@@ -50,15 +51,21 @@ python triangle.py
 
 ### `is_valid_triangle(a, b, c)`
 
-- **Description**: Checks if three given lengths can form a valid triangle.
+- **Description**: Checks whether three given lengths can form a valid triangle.
 - **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths to form a triangle.
 - **Returns**: 
   - True if the sides form a valid triangle.
   - False if the sides do not form a valid triangle.
 
+### `get_angles(a, b, c)`
+
+- **Description**: Calculates the angles of a triangle in degrees.
+- **Parameters**: `a`, `b`, `c` (floats or integers): Side lengths of the triangle.
+- **Returns**: The angles of the triangle defined by side lengths a, b, and c.
+
 ## Usage Example
 
-If you want to use the script for calculations on a triangle with side lengths `a`, `b`, and `c`, change the values to:
+If you want to run the calculations on a triangle with side lengths `a=3`, `b=4`, and `c=5`, you can input them into the Python console as shown below:
 
 ```python
 a, b, c = 3, 4, 5
@@ -66,6 +73,7 @@ a, b, c = 3, 4, 5
 print(f'Is valid triangle: {is_valid_triangle(a, b, c)}')
 print(f"Perimeter: {get_perimeter(a, b, c)}")
 print(f"Area: {get_area(a, b, c)}")
+print(f"Angles: {get_angles(a, b, c)}")
 ```
 
 ## Output
@@ -76,6 +84,7 @@ The output given for a triangle with side lengths `a = 3`, `b = 4`, and `c = 5`:
 Is valid triangle: True
 Perimeter: 12
 Area: 6.0
+Angles: (36.86989764584402, 53.13010235415599, 90.0)
 ```
 
 ## Contributions
